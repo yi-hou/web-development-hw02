@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>HW03 Task Three </title>
+  <link rel="floatcss" href="float-css.css">
+  <style>
+  .left{float:left;width:33%;font-size:20px; color:Gold;}
+  .right{float:right; width:66%; overflow:auto; visibility:hidden;}
+  body{font-family: Arial;background-color:SkyBlue;}
+  h1{font-size:50px;color:Gold; width:500px; margin:0 auto; padding-top:50px; padding-bottom:50px;text-align:center;}
+  th{font-size:20px; font-weight:bold;text-align:left;color:Gold;}
+  td{vertical-align:top;color:Gray;}
+  </style> 
+ </head>
+
+ <body>
+   <h1>HW02 Task Three</h1>
+   <table>
+    <tr>
+     <th class="left">Link Text</th>
+     <th class="right">Right column contents</th>
+    </tr>
+
+    <tr>
+     <td class="left">
+     <br/><a href="#Lorem-Ipsem" id="link1">Lorem Ipsem</a>
+     </td>
+     <td id="Lorem-Ipsem" class="right">
+      <p>Four pargraphs of Lorem Ipsem text:</p>
+      <blockquote>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis fringilla est sit amet aliquet. Sed vel dui vehicula, cursus ante eu, facilisis nulla. Fusce ut libero placerat, congue nibh in, luctus purus. Nam nibh sem, vehicula vitae neque consectetur, tincidunt mollis nunc. Quisque fermentum imperdiet gravida. Duis ornare magna augue, eget accumsan nulla mollis at. Aliquam ac mi sed nibh tincidunt consectetur. In facilisis ullamcorper purus, eu faucibus eros tristique id. Nulla blandit leo quam, sed volutpat mi vehicula et. 
+        </blockquote>
+        <blockquote>
+         Nunc fringilla nisi a enim molestie pellentesque. Mauris in molestie mi. Duis elit metus, iaculis at tincidunt et, consectetur sed neque. Donec eleifend tortor sed eros vulputate consequat. Nullam elementum fermentum diam luctus viverra. Sed interdum mauris eu arcu volutpat, quis interdum neque consectetur. Aenean bibendum augue risus, eget porttitor dui dignissim nec. Sed vitae odio lobortis, porttitor mi id, efficitur nibh.
+        </blockquote>
+        <blockquote>
+         Maecenas dapibus enim felis. Nulla nec posuere quam. Maecenas pretium tincidunt ligula quis hendrerit. Ut ut pretium magna. Nullam vestibulum eros et massa molestie, non condimentum mi egestas. Morbi posuere nibh sed tincidunt accumsan. Maecenas est velit, aliquet viverra purus sollicitudin, mollis ullamcorper orci. Etiam a orci interdum, posuere nulla eget, pharetra dui. Integer molestie lorem eget libero convallis, ac efficitur nisl auctor. Vestibulum accumsan ipsum at ligula venenatis, nec dignissim lacus consectetur. Donec et lacinia tellus.
+        </blockquote>
+        <blockquote>
+         Phasellus finibus est eu sem posuere volutpat. In imperdiet felis est, ut feugiat sem hendrerit id. Mauris a mattis eros. Nunc velit mi, scelerisque quis nunc nec, lacinia faucibus massa. Vestibulum at erat erat. Ut vehicula magna urna, sed ullamcorper massa elementum sit amet. In hendrerit nunc vitae ligula hendrerit blandit. Donec congue, dolor eu facilisis tempus, turpis justo ornare nunc, ut pretium turpis enim ut massa. Ut iaculis sapien quis urna eleifend ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+      </blockquote>
+     </td>
+    </tr>
+    <tr>
+     <td class="left">
+     <br/><a href="#99-Bottles" id="link2">99 Bottles</a>
+     </td>
+     <td id="99-Bottles" class="right">
+      <p>The first four verses of 99 Bottles of Beer:</p>
+      <blockquote>
+        3 bottles of beer on the wall, 3 bottles of beer.
+        Take one down and pass it around, 2 bottles of beer on the wall.
+        </blockquote>
+        <blockquote>
+        2 bottles of beer on the wall, 2 bottles of beer.
+        Take one down and pass it around, 1 bottle of beer on the wall.
+        </blockquote>
+        <blockquote>
+        1 bottle of beer on the wall, 1 bottle of beer.
+        Take one down and pass it around, no more bottles of beer on the wall.
+        </blockquote>
+        <blockquote>
+        No more bottles of beer on the wall, no more bottles of beer.
+        Go to the store and buy some more, 99 bottles of beer on the wall.
+        </blockquote>
+     </td>
+    </tr>
+    <tr>
+     <td class="left">
+     <a href="#Last-Thing" id="link3">Last Thing</a>
+     </td>
+     <td id="Last-Thing" class="right">This is the third thing.</td>
+    </tr>
+ <script>
+   function showText1(){
+   return document.getElementById("Lorem-Ipsem").style.visibility = "visible";
+   }
+   function showText2(){
+   return document.getElementById("99-Bottles").style.visibility = "visible";
+   }
+   function showText3(){
+   return document.getElementById("Last-Thing").style.visibility = "visible";
+   }
+   var link1 = document.getElementById("link1");
+   link1.onclick=showText1;
+   var link2 = document.getElementById("link2");
+   link2.onclick=showText2;
+   var link3 = document.getElementById("link3");
+   link3.onclick =showText3;
+ </script>
+  
+ </body>
+
+</html>
